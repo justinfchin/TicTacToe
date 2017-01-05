@@ -1,5 +1,5 @@
 /**
- * Player Class for TicTacToe
+ * Controller Class for TicTacToe
  * @author Justin Chin
  * @author Cyndi Chin
  * @version 1.0

@@ -18,7 +18,7 @@ public class Board {
      * Checks if Board is Full
      * @return True if Board is Full, else False.
      */
-    public boolean isBoardFull(){
+    public boolean isFull(){
         //Loop through all the elements
         for(int i = 0; i < size; i++){
             for(int j = 0; j < size; j++){
