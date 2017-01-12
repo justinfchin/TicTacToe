@@ -6,9 +6,10 @@
  * @since Jan. 3, 2017
  */
 public class Player {
-    private String look; //convert to images later?
+    private int numWins;    //number of times won
 
-    public Player(String look){
-        this.look = look;
+    public Player(String x ){
+        this.numWins = 0;
     }
+
 }
