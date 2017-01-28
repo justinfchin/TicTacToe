@@ -1,7 +1,6 @@
 /**
  * Board Class for TicTacToe
  * @author Justin Chin
- * @author Cyndi Chin
  * @version 1.0
  * @since Jan. 3, 2017
  */
@@ -12,7 +11,7 @@ public class Board {
     public int currentRow, currentCol;     //current selected Row and Column
 
     public enum Piece{
-        EMPTY, X,O
+        EMPTY, X,O;
     }
 
 
@@ -29,7 +28,7 @@ public class Board {
         //Loop through all the elements
         for(int i = 0; i < size; i++){
             for(int j = 0; j < size; j++){
-                if(boardArray[i][j] == null) return false;
+                if(boardArray[i][j] == Piece.EMPTY) return false;
             }
         }
         return true;
@@ -113,6 +112,7 @@ public class Board {
     public int getSize(){
         return size;
     }
+
     /**
      * Resets the Board
      */
@@ -131,7 +131,7 @@ public class Board {
             }
             System.out.println();
             if (row < size - 1) {
-                System.out.println("-----------");
+                System.out.println("-----------------");
             }
         }
     }
